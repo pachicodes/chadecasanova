@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cha de Casa Nova - Lista de Presentes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="page">
-      <section class="card">
-        <header class="hero">
-          <p class="eyebrow">Festa de aniversario ou cha de casa nova? Por que nao os dois?</p>
-          <h1>Lista de Presentes</h1>
-          <p class="subtitle">
-            Se voce NAO vai a festa, segue o link para comprar e mandar chegar na minha casinha:
-            <a href="https://www.amazon.com.br/hz/wishlist/ls/VT4P3HX0P1YB?ref_=wl_share" target="_blank" rel="noopener noreferrer">Lista da Amazon</a>
-          </p>
-          <p class="subtitle">
-            Se voce vai a festa, ja confirmou?
-            <a href="https://wa.me/5514936180712" target="_blank" rel="noopener noreferrer">Manda mensagem no meu zap: (14) 93618-0712</a>
-          </p>
-          <p class="subtitle">
-            Se o item nao tiver uma opcao marcada, pode escolher a cor ou o modelo que voce preferir, afinal, e presente, ne?
-          </p>
-          <p class="subtitle">
-            Nao quer dar algo da lista? Da o que voce quiser. Nao quer dar nada? Ta aqui so de curiosidade. Aproveita e compra um presentinho, xoxo &lt;3
-          </p>
-          <p class="subtitle">
-            Se voce for comprar algo da lista, nao precisa ser a versao da Shopee, nem identico. So marca aqui que voce ja comprou, e anonimo.
-          </p>
-          <p class="subtitle">
-            Ah, mas o aniversario nao e do Deric tambem? E, mas os presentes sao para a minha casa, onde eu vou morar com a nossa mae, e ele vai para la direto, entao da na mesma. Mas, qualquer duvida, pode me chamar. Se eu gostar de voce, te passo o zap da minha cunhada Leticia para voce encher o saco dela.
-          </p>
-        </header>
 
-        <ul id="gift-list" class="gift-list" aria-live="polite"></ul>
-      </section>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cha de Casa Nova - Lista de Presentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <dialog id="confirm-dialog" class="confirm-dialog">
-      <form method="dialog" class="dialog-content">
-        <h2>Confirmar presente</h2>
-        <p id="dialog-message"></p>
+<body>
+  <main class="page">
+    <section class="card">
+      <header class="hero">
+        <p class="eyebrow">Festa de aniversario ou cha de casa nova? Por que nao os dois?</p>
+        <h1>Lista de Presentes</h1>
+        <p class="subtitle">
+          Se voce NÃO vai a festa, segue o link para comprar e mandar chegar na minha casinha:
+          <a href="https://www.amazon.com.br/hz/wishlist/ls/VT4P3HX0P1YB?ref_=wl_share" target="_blank"
+            rel="noopener noreferrer">Lista da Amazon</a>
+        </p>
+        <p class="subtitle">
+          Se você vai a festa, ja confirmou? CONFIRMAAAAAAA
+          <a href="https://wa.me/5514936180712" target="_blank" rel="noopener noreferrer">Manda mensagem no meu zap:
+            (14) 93618-0712</a>
+        </p>
+        <p class="subtitle">
+          Se o item não tiver uma opção marcada, pode escolher a cor ou o modelo que voce preferir, afinal, é presente,
+          né?
+        </p>
+        <p class="subtitle">
+          Não quer dar algo da lista? Da o que voce quiser. Tá aqui só de curiosidade? Aproveita e
+          compra um presentinho, xoxo &lt;3
+        </p>
+        <p class="subtitle">
+          Se você for comprar algo da lista, não precisa ser exatamente igual o que tá na lista Só marca aqui que você já
+          comprou, é anonimo.
+        </p>
+        <p class="subtitle">
+          Ah, mas o aniversário não é do Deric também? É, mas os presentes são para a minha casa, onde eu vou morar com
+          a nossa mãe, e ele vai para lá direto, então dá na mesma. Mas, qualquer duvida, pode me chamar e eu gostar
+          de voce, te passo o zap da minha cunhada Leticia para voce encher o saco dela e perguntar o que dar pro Deric.
+        </p>
+      </header>
 
-        <menu class="dialog-actions">
-          <button value="cancel" class="btn btn-secondary">Cancelar</button>
-          <button id="confirm-button" value="default" class="btn btn-primary">
-            Sim, eu comprei
-          </button>
-        </menu>
-      </form>
-    </dialog>
+      <ul id="gift-list" class="gift-list" aria-live="polite"></ul>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <dialog id="confirm-dialog" class="confirm-dialog">
+    <form method="dialog" class="dialog-content">
+      <h2>Confirmar presente</h2>
+      <p id="dialog-message"></p>
+
+      <menu class="dialog-actions">
+        <button value="cancel" class="btn btn-secondary">Cancelar</button>
+        <button id="confirm-button" value="default" class="btn btn-primary">
+          Sim, eu comprei
+        </button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
