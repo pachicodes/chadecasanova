@@ -138,6 +138,11 @@ const gifts = [
     id: 28,
     name: "Liquidificador Diamante 800W (preto)",
     url: "https://www.amazon.com.br/Liquidificador-Diamante-800W-33102118-Preto/dp/B07659FXRM/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=14155NF074LVP&dib=eyJ2IjoiMSJ9.Pngi5UnwvNM31geKxTCD0pE-3x2swZ2NsRUUHoBzbTeE4uKLgD3hk6fR8mTTDJdWDLvr9IQs7k92qe-Et3WfTkTYT4cCUcvUpCRsK_IZxNFlZaOFJ8nFTtpEigmOfeu4Sg_qfJ9uqBB5wzq3NXqIEJIWaKmEJ3RhlykHrGZMIQRgr8zMDJrsrHzGgui4FalvT-8NJR1i10crtabhBsI_Lq7dQ3h4Ar_gEOFiQ5-WCw8.sPwUt0tR3oRdlLUbwe3zUZYUJeTJFKrgRnLV38fm4ug&dib_tag=se&keywords=liquidificador%2Bbritania&qid=1774810589&s=kitchen&sprefix=liquidificador%2Bbritania%2Ckitchen%2C351&sr=1-3&th=1"
+  },
+  {
+    id: 29,
+    name: "Item Amazon (lista de desejos) 6",
+    url: "https://www.amazon.com.br/dp/B08JD66K5C/?coliid=I30EZRF2I40IDL&colid=VT4P3HX0P1YB&ref_=list_c_wl_lv_ov_lig_dp_it&th=1"
   }
 ];
 
