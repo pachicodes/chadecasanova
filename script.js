@@ -170,11 +170,16 @@ function renderList() {
     title.className = "gift-name";
     title.textContent = gift.name;
 
+    const price = document.createElement("p");
+    price.className = "gift-price";
+    price.textContent = `Faixa de preco: ${gift.priceRange || "consulte o link"}`;
+
     const badge = document.createElement("span");
     badge.className = `badge ${isBought ? "done" : "available"}`;
     badge.textContent = isBought ? "Comprado" : "Disponivel";
 
     info.appendChild(title);
+    info.appendChild(price);
     info.appendChild(badge);
 
     const actions = document.createElement("div");

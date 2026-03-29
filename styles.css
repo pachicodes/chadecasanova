@@ -124,6 +124,12 @@ h1 {
   font-weight: 600;
 }
 
+.gift-price {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 0.86rem;
+  color: var(--text-soft);
+}
+
 .gift-item.done .gift-name {
   text-decoration: line-through;
   color: var(--done);
