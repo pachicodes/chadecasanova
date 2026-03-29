@@ -146,6 +146,38 @@ const gifts = [
   }
 ];
 
+const defaultPriceRanges = {
+  1: "R$ 30 a R$ 60",
+  2: "R$ 30 a R$ 60",
+  3: "R$ 70 a R$ 130",
+  4: "R$ 40 a R$ 90",
+  5: "R$ 80 a R$ 170",
+  6: "R$ 20 a R$ 40",
+  7: "R$ 20 a R$ 45",
+  8: "R$ 35 a R$ 70",
+  9: "R$ 70 a R$ 140",
+  10: "R$ 60 a R$ 120",
+  11: "R$ 25 a R$ 55",
+  12: "R$ 220 a R$ 380",
+  13: "R$ 40 a R$ 85",
+  14: "R$ 25 a R$ 60",
+  15: "R$ 25 a R$ 55",
+  16: "R$ 45 a R$ 95",
+  17: "R$ 20 a R$ 45",
+  18: "R$ 25 a R$ 60",
+  19: "R$ 30 a R$ 80",
+  20: "R$ 60 a R$ 140",
+  21: "R$ 90 a R$ 180",
+  22: "R$ 80 a R$ 170",
+  23: "R$ 40 a R$ 200",
+  24: "R$ 40 a R$ 200",
+  25: "R$ 40 a R$ 200",
+  26: "R$ 40 a R$ 200",
+  27: "R$ 40 a R$ 200",
+  28: "R$ 130 a R$ 230",
+  29: "R$ 40 a R$ 200"
+};
+
 const boughtIds = new Set();
 
 const giftListElement = document.getElementById("gift-list");
@@ -172,7 +204,7 @@ function renderList() {
 
     const price = document.createElement("p");
     price.className = "gift-price";
-    price.textContent = `Faixa de preco: ${gift.priceRange || "consulte o link"}`;
+    price.textContent = `Faixa de preco: ${gift.priceRange || defaultPriceRanges[gift.id] || "consulte o link"}`;
 
     const badge = document.createElement("span");
     badge.className = `badge ${isBought ? "done" : "available"}`;
