@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cha de Casa Nova - Lista de Presentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <header class="hero">
+          <p class="eyebrow">Nosso Cha de Casa Nova</p>
+          <h1>Lista de Presentes</h1>
+          <p class="subtitle">
+            Escolha um item para presentear e confirme para marcarmos como comprado.
+          </p>
+        </header>
+
+        <ul id="gift-list" class="gift-list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <dialog id="confirm-dialog" class="confirm-dialog">
+      <form method="dialog" class="dialog-content">
+        <h2>Confirmar presente</h2>
+        <p id="dialog-message"></p>
+
+        <menu class="dialog-actions">
+          <button value="cancel" class="btn btn-secondary">Cancelar</button>
+          <button id="confirm-button" value="default" class="btn btn-primary">
+            Sim, eu comprei
+          </button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
